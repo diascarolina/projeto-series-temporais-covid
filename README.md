@@ -107,7 +107,7 @@ E um agradecimento especial aos meu amigos _"bootcampers"_ Junior Torres e Valqu
 
 ---
 
-Um outro projeto bem mais aprofundado que utiliza previsões de séries temporais, mas em um contexto de prever o consumo de energia pode ser encontrado [aqui](https://github.com/diascarolina/project-energy-consumption-in-brazil).
+### 🟢 Um outro projeto bem mais aprofundado que utiliza previsões de séries temporais, mas em um contexto de prever o consumo de energia pode ser encontrado [aqui](https://github.com/diascarolina/project-energy-consumption-in-brazil).
 
 ---
 
