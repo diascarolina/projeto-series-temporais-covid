@@ -11,11 +11,7 @@
 3. [Análises](#analise)
 4. [Conclusões](#conc)
 5. [Propostas de Melhoria](#props)
-6. [Ferramentas & Bibliotecas](#libs)
-7. [Referências](#refs)
-8. [Agradecimentos](#agra)
-9. [Contatos](#contact)
-
+6. [Referências](#refs)
 
 <a name="intro"></a>
 # 1 Introdução
@@ -35,6 +31,8 @@ Com isso também foi lançado o [IntegraSUS Analytics](https://integrasusanalyti
 
 - [Secretaria da Saúde do Ceará lança plataforma de dados IntegraSUS Analytics](http://www.issec.ce.gov.br/index.php/assessoria-de-comunicacao/listanoticias/932-secretaria-da-saude-do-ceara-lanca-plataforma-de-dados-integrasus-analytics)
 
+### 🟢 [Notebook do Projeto](https://github.com/diascarolina/projeto-series-temporais-covid/blob/main/notebooks/projeto-series-temporais-covid.ipynb)
+
 <a name="data"></a>
 # 2 Dados
 
@@ -52,12 +50,14 @@ O dataset utilizado nesse notebook possui sua última atualização no dia **29/
     <strong><a href='https://github.com/diascarolina/projeto-series-temporais-covid/blob/main/notebooks/limpeza-dados.ipynb'>Notebook de Limpeza dos Dados Sobre a Covid-19</a></strong>
 </div>
 
-
 Também foi feita uma breve análise sobre a vacinação contra a doença. Os dados foram extraídos de:
 
 - [OpenDataSUS: Registros de Vacinação COVID-19](https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao/resource/ef3bd0b8-b605-474b-9ae5-c97390c197a8)
 
 Como os dados são sobre cada aplicação individual da vacina, os arquivos são muito grandes. Por isso, adaptei os datasets para termos os dados da contagem de quantas doses de vacina foram aplicadas por dia, obtendo assim um arquivo bem menor que pode ser encontrado [aqui](https://github.com/diascarolina/projeto-series-temporais-covid/blob/main/data/vacina_total_ce.csv). Última atualização desses dados: **29/06/2021**.
+
+
+### 🟢 [Notebook da Limpeza dos Dados](https://github.com/diascarolina/projeto-series-temporais-covid/blob/main/notebooks/limpeza-dados.ipynb)
 
 <a name="analise"></a>
 # 3 Análises
@@ -71,4 +71,44 @@ Ademais, fizemos uma breve análise sobre a aplicação de vacinas contra a Covi
 <a name="conc"></a>
 # 4 Conclusões
 
+Das previsões realizadas com o Prophet para o número de novos casos e para o número de novos óbitos no Estado do Ceará, vemos que os números não parecem estar diminuindo, o que não é uma boa notícia para todos.
 
+Sobre a vacinação, ainda é cedo para podermos afirmar que certa diminuição nos números são causa direta da vacinação, pois ela ainda está caminhando lentamente.
+
+Por último, vimos que foram vacinadas mais de 500.000 mulheres a mais que homens no Estado do Ceará.
+
+<a name="props"></a>
+# 5 Propostas de Melhorias
+
+- Melhorar os hiperparâmetros do Prophet para uma melhor previsão;
+- Escalar os dados para usar o método ```".add_regressor()"``` do Prophet;
+- Levar a análise para novos dados, como a taxa de mortalidade, por exemplo;
+- Dividir a análise da vacinação por faixa etária.
+
+<a name="refs"></a>
+# 6 Referências
+
+- [Secretaria de Saúde do Estado do Ceará](https://www.saude.ce.gov.br/)
+- [Sesa busca propostas de ferramentas para prever curva da Covid-19](https://diariodonordeste.verdesmares.com.br/metro/sesa-busca-propostas-de-ferramentas-para-prever-curva-da-covid-19-1.3009707)
+- [IntegraSUS Analytics](https://integrasusanalytics.saude.ce.gov.br/pt/home)
+- [Secretaria da Saúde do Ceará lança plataforma de dados IntegraSUS Analytics](http://www.issec.ce.gov.br/index.php/assessoria-de-comunicacao/listanoticias/932-secretaria-da-saude-do-ceara-lanca-plataforma-de-dados-integrasus-analytics)
+- [Brasil.io](https://brasil.io/home/)
+- [Covid-19 - Brasil.io](https://brasil.io/dataset/covid19/caso_full/)
+- [OpenDataSUS: Registros de Vacinação COVID-19](https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao/resource/ef3bd0b8-b605-474b-9ae5-c97390c197a8)
+- [Why Is There Such A Gender Gap In COVID-19 Vaccination Rates?](https://fivethirtyeight.com/features/why-is-there-such-a-gender-gap-in-covid-19-vaccination-rates/)
+
+---
+
+Esse projeto é parte do Módulo 3 do Bootcamp Data Science Aplicada da [Alura](https://www.alura.com.br/).
+
+Agradecimentos aos instrutores do módulo, Karoline Penteado e Allan Spadini.
+
+E um agradecimento especial aos meu amigos _"bootcampers"_ Junior Torres e Valquíria Alencar que trouxeram bom-humor para os momentos mais cansativos do projeto.
+
+---
+
+Dúvidas? Dicas? Sugestões? Ficarei feliz em recebê-las!
+- **E-mail:** [carolinadiasw@gmail.com](mailto:carolinadiasw@gmail.com)
+- **Linkedin:** https://www.linkedin.com/in/carodias/
+- **Github:** https://github.com/diascarolina
+- **Discord**: [Carolina Dias#6164](https://discord.com/app)
